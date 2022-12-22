@@ -11,6 +11,6 @@ To use this project:
 - clone the repo.
 - run `go build getTemps.go` to build the executable file (`go run getTemps.go` works for testing/manual use)
 - run `crontab -e` to configure a cronjob to run the executable
-  - e.g. to capture data every 5 minutes, add `*/5* ** * cd /path/to/ds18b20-science-fair/ && ./getTemps
+  - e.g. to capture data every 5 minutes, add `*/5* ** * cd /path/to/ds18b20-science-fair/ && ./getTemps`
 - when the job is triggered, a new timestamped CSV file should appear in the `./data` directory
 - if desired, the files can be concateneated together for additional processing: `cat *.csv > combined_output.csv`
