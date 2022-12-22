@@ -13,4 +13,4 @@ To use this project:
 - run `crontab -e` to configure a cronjob to run the executable
   - e.g. to capture data every 5 minutes, add `*/5* ** * cd /path/to/ds18b20-science-fair/ && ./getTemps`
 - when the job is triggered, a new timestamped CSV file should appear in the `./data` directory
-- if desired, the files can be concateneated together for additional processing: `cat *.csv > combined_output.csv`
+- if desired, the files can be concatenated together for additional processing: `cat *.csv > combined_output.csv`
