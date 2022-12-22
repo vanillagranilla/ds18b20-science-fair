@@ -3,10 +3,11 @@ package main
 import (
 	"encoding/csv"
 	"fmt"
-	"github.com/yryz/ds18b20"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/yryz/ds18b20"
 )
 
 func main() {
@@ -15,7 +16,6 @@ func main() {
 
 	myTime := time.Now().In(loc)
 	timestamp := myTime.Format(time.RFC3339)
-	const numSensors int = 2 //hardcoding this - a bit of a hack
 
 	sensors, e := ds18b20.Sensors()
 	CheckError(e)
